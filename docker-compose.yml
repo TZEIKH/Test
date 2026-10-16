@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "vitrygtr"
+      MYSQL_DATABASE: "Mydb"
+    volumes:
+      - dbData:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql   # meme nom que le service mysql
+      PMA_PORT: 3306
+    restart: always
+    ports:
+      - "8080:80"
+volumes:
+  dbData:

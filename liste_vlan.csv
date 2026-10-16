@@ -1,0 +1,4 @@
+vlan;nom;description
+10;B101;salle de TP 1
+20;B102;salle de TP 2
+30;B103;salle serveurs

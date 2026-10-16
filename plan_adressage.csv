@@ -1,3 +1,5 @@
+# Plan d adressage des salles du batiment B
+# un VLAN par salle, la passerelle est en .254
 salle;vlan;reseau;passerelle
 B101;10;192.168.10.0/24;192.168.10.254
 B102;20;192.168.20.0/24;192.168.20.254
